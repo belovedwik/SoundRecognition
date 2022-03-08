@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{228D910B-151D-4AE6-84C9-C54C1041F7D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeltaM.DeltaTell.Amd</RootNamespace>
+    <AssemblyName>DeltaM.DeltaTell.Amd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Speech, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Microsoft.Speech.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\AudioComparerAbstract.cs" />
+    <Compile Include="Abstract\IAudioComparer.cs" />
+    <Compile Include="AmdDectionService.cs" />
+    <Compile Include="AmdSettings.cs" />
+    <Compile Include="AudioAnalizers\AudioAnalizer.cs" />
+    <Compile Include="AudioComparer.cs" />
+    <Compile Include="AudioComparerResult.cs" />
+    <Compile Include="AutoAnswerType.cs" />
+    <Compile Include="AutoDetectConnection.cs" />
+    <Compile Include="AutoDetectMethod.cs" />
+    <Compile Include="Detector.cs" />
+    <Compile Include="Entities\AudioCutter.cs" />
+    <Compile Include="Entities\AudioRecordVaw.cs" />
+    <Compile Include="Entities\AudioSetting.cs" />
+    <Compile Include="Entities\InvalidFileInfo.cs" />
+    <Compile Include="Entities\SampleSilence.cs" />
+    <Compile Include="Entities\SilenceInfo.cs" />
+    <Compile Include="Entities\Word.cs" />
+    <Compile Include="Helpers\PlayListBuilder.cs" />
+    <Compile Include="Helpers\WavFileUtils.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <Content Include="Scripts\EnableMSSPEECH.sql" />
+    <Content Include="Tools\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Grammars\Grammars Compiled\by-By.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars Compiled\kz-Kz.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars Compiled\ru-Ru.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars Compiled\uk-Ua.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars To Compile\by-By.grxml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars To Compile\kz-Kz.grxml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars To Compile\ru-Ru.grxml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Grammars\Grammars To Compile\uk-Ua.grxml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Tools\Grammars\Grammars Compiled\by-By.cfg" />
+    <None Include="Tools\Grammars\Grammars Compiled\kz-Kz.cfg" />
+    <None Include="Tools\Grammars\Grammars Compiled\ru-Ru.cfg" />
+    <None Include="Tools\Grammars\Grammars Compiled\ua-Ua.cfg" />
+    <None Include="Tools\Grammars\Grammars To Compile\by-By.grxml" />
+    <None Include="Tools\Grammars\Grammars To Compile\kz-Kz.grxml" />
+    <None Include="Tools\Grammars\Grammars To Compile\ru-Ru.grxml" />
+    <None Include="Tools\Grammars\Grammars To Compile\ua-Ua.grxml" />
+    <None Include="Tools\MicrosoftSpeechPlatformSDK .msi" />
+    <None Include="Tools\MSSpeech_SR_ru-RU_TELE.msi" />
+    <None Include="Tools\SpeechPlatformRuntime.msi" />
+    <None Include="Tools\SpeechPlatformRuntime_x64.msi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\AnyLog\AnyLog.csproj">
+      <Project>{3d5f230e-0971-4b94-9ec3-cdb4f78d025c}</Project>
+      <Name>AnyLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Core\DeltaM.DeltaTell.Core.csproj">
+      <Project>{69cf15ff-0b05-4962-b50f-c02a872083cb}</Project>
+      <Name>DeltaM.DeltaTell.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

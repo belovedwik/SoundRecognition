@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundRecognitionConsole", "RecognitionConsole\SoundRecognitionConsole.csproj", "{5E975F68-C667-4B9B-B3EC-643133251A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognitionLib", "RecognitionLib\RecognitionLib.csproj", "{DA617142-9DE8-4ECE-8771-BDCB7AEBA48C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TempFolder", "TempFolder", "{055D5F71-BF98-44E1-8CA2-8D0EF6C5B9DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E975F68-C667-4B9B-B3EC-643133251A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E975F68-C667-4B9B-B3EC-643133251A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E975F68-C667-4B9B-B3EC-643133251A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E975F68-C667-4B9B-B3EC-643133251A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA617142-9DE8-4ECE-8771-BDCB7AEBA48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA617142-9DE8-4ECE-8771-BDCB7AEBA48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA617142-9DE8-4ECE-8771-BDCB7AEBA48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA617142-9DE8-4ECE-8771-BDCB7AEBA48C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89E2E2CF-5504-4B20-BB84-49C48E55421E}
+	EndGlobalSection
+EndGlobal

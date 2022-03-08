@@ -1,0 +1,78 @@
+{  
+   "Targets":[  
+      {  
+         "Name":"Console",
+         "Layout":"[{time}] [{level}]: {source}:{line} | {message} {stacktrace}",
+         "Layouts":{  
+            "Error":"[{timelong}] [{level}] \r\n  Message    : {message} \r\n  Line       : {sourcefull}:{line} \r\n  Method     : {method}\r\n  StackTrace : \r\n{stacktrace}",
+            "Trace":"[{timelong}] [{level}]  Message : {message} : {sourcefull} | time: {spent}",
+            "Info":"[{timelong}] {message} ",
+            "Debug":"[{timelong}] {message} ",
+            "Online":"{message}"
+         },
+         "Type":"Console",
+         "Level":"Info",
+         "Colors":{  
+            "Error":"Red",
+            "Info":"Gray",
+            "Trace":"DarkYellow",
+            "Debug":"Green"
+         }
+      },
+      {  
+         "Name":"Log by Day",
+         "Layout":"[{datetimelong}] [{level}] {method} | {sourcefull}:{line} | {message}",
+         "FileName":"{basedir}/logs/{date}/info.txt",
+         "Type":"File",
+         "Level":"Info"
+      },
+      {  
+         "Name":"Log by Day Trace",
+         "Layout":"[{datetimelong}] [{level}] {method} | {sourcefull}:{line} | {message}",
+         "FileName":"{basedir}/logs/{date}/trace.txt",
+         "Type":"File",
+         "Level":"Trace"
+      },
+      {  
+         "Name":"Log by Day Debug",
+         "Layout":"[{datetimelong}] [{level}] {method} | {sourcefull}:{line} | {message}",
+         "FileName":"{basedir}/logs/{date}/debug.txt",
+         "Type":"File",
+         "Level":"Debug"
+      },
+      {  
+         "Name":"File1",
+         "Layout":"[{datetimelong}] [{level}] : {message}",
+         "FileName":"{basedir}/logs/{date}/total.txt",
+         "Type":"File",
+         "Level":"Info,Trace,Debug"
+      },
+      {  
+         "Name":"errors",
+         "Layout":"[{datetimelong}] \r\n  Message    : {message} \r\n  Line       : {sourcefull}:{line} \r\n  Method     : {method}\r\n  StackTrace : \r\n{stacktrace} ",
+         "FileName":"{basedir}/logs/{date}/errors.txt",
+         "SkipFilter":"%SshConnectionException%",
+         "Type":"File",
+         "Level":"Error"
+      },
+      {  
+         "Name":"Network errors",
+         "Layout":"[{datetimelong}] \r\n  Message    : {message} \r\n  Line       : {sourcefull}:{line} \r\n  Method     : {method}\r\n  StackTrace : \r\n{stacktrace} ",
+         "Filter":"%CheckContextTerminated%",
+         "FileName":"{basedir}/logs/{date}/lan-errors.txt",
+         "Type":"File",
+         "Level":"Error"
+      }      /*,
+      {  
+         "Name":"DB",
+         "Layout":"[{datetimelong}] | {typename} | {message} | {arguments} | {stacktrace} ",
+         "FileName":"{basedir}/logs/{date}-errors.txt",
+         "Type":"MSSQL",
+         "ConnectionString":"Data Source=192.168.22.11\\STORKSQL; Connect Timeout=30; Timeout=100;  Max Pool Size=5000;  Initial Catalog=DeltaLog; User Id=sa; Password=DELTAtrance10;",
+         "TableName":"LogItems",
+         "Interval":1000,
+         "Level":"Error"
+      }      */
+   ],
+   "Level":"Online"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<grammar version="1.0" xml:lang="ru-RU" root="Команды"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics-ms/1.0">
+
+        <rule id = "Команды" scope = "public">
+		<one-of>
+
+      <item>
+        Вас приветствует автоответчик<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вне зоны доступа<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент не доступен<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент временно не доступен<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент не может<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент не может ответить на ваш звонок<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент не может от<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент занят или временно не доступен<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент занят или временно не доступен попробуйте<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Абонент занят или временно не доступен попробуйте позв<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        бонент не доступен ваш звонок был переадресован<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        бонент не доступен ваш звонок был переадресова<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        бонент не доступен ваш звонок был переадре<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        онент не доступен ваш звонок был переадре <tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        онент не доступен ваш звонок был переадресова<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        онент не отве ает ваш звонок был переа<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемого абонента занят<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемый абонент не отвечает<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемый абонент не отвечает ва<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемый абонент не отвечает ваш зв<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемый абонент не отвечает ваш зво<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        вызываемый абонент не отвечает ваш <tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        вызываэмый абонент не отвечает ваш зв <tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вызываемый абонент не отвечает ваш звонок<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено пожалуйста подождите<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено пожалуйста<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вы связялись с голосовы ящиком абонента триста семдисят пять<tag> $.cmd = "route"</tag>
+      </item>  
+      <item>
+        с голосовы ящиком абонента триста семдисят пять<tag> $.cmd = "route"</tag>
+      </item> 
+      <item>
+        ящиком абонента триста семдисят пять<tag> $.cmd = "route"</tag>
+      </item>  
+      <item>
+        ящиком абонента триста семдисят<tag> $.cmd = "route"</tag>
+      </item> 
+      <item>
+        абонента триста семдисят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        триста семдисят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вы можете оставить ему своё вообщение<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        можете оставить ему своё вообщение<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        оставить ему своё вообщение<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Запись сообщения начнёться после сигнала<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        сообщения начнёться после сигнала<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        сообщения начнёться после сиг<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        после сигнала<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        после сигнала<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Вы связались с голосовым ящиком абонента триста семьдесят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        с голосовым ящиком абонента триста семьдесят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+       голосовым ящиком абонента триста семьдесят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        ящиком абонента триста семьдесят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        триста семьдесят пять<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено пожалуйста подождите<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено пожалуйста<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено пожалуйста подождите<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        Соединение установлено<tag> $.cmd = "route"</tag>
+      </item>    
+      <item>
+        здравствуйте с вами говорит автоответчик<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        здравствуйте с вами говорит автоответчик абонент временно не доступен<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        дравствуйте с вами говорит автоответчик<tag> $.cmd = "route"</tag>
+      </item>
+      <item>
+        дравствуйте с вами говори<tag> $.cmd = "route"</tag>
+      </item>
+				
+				
+		</one-of>
+	</rule>
+  </grammar>
